@@ -1,0 +1,17 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": null,
+        "project_name": "flask-crud",
+        "runtime": "python3.9",
+        "s3_bucket": "flask-crud",
+        "aws-region": "ap-shoutheast-1"
+    }
+}

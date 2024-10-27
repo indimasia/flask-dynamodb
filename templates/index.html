@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask DynamoDB CRUD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="100">
+        <h1>Flask DynamoDB CRUD App</h1>
+    </header>
+
+    <main>
+
+        <h2>Create Item</h2>
+        <form id="createForm">
+            <label>Item ID:</label>
+            <input type="text" id="createItemId" required>
+            <label>Name:</label>
+            <input type="text" id="createName" required>
+            <button type="submit">Create</button>
+        </form>
+
+        <h2>Get Item</h2>
+        <form id="getForm">
+            <label>Item ID:</label>
+            <input type="text" id="getItemId" required>
+            <button type="submit">Get</button>
+        </form>
+        <pre id="getResult"></pre>
+
+        <h2>Update Item</h2>
+        <form id="updateForm">
+            <label>Item ID:</label>
+            <input type="text" id="updateItemId" required>
+            <label>Name:</label>
+            <input type="text" id="updateName" required>
+            <button type="submit">Update</button>
+        </form>
+
+        <h2>Delete Item</h2>
+        <form id="deleteForm">
+            <label>Item ID:</label>
+            <input type="text" id="deleteItemId" required>
+            <button type="submit">Delete</button>
+        </form>
+
+        <h2>List All Items</h2>
+        <button id="listButton">List Items</button>
+        <pre id="listResult"></pre>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>    
+</body>
+</html>

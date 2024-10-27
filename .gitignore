@@ -1,0 +1,11 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Environment variables
+.env
+.venv/
+env/
+venv/
+*.mp3
